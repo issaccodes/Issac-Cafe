@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 h1 {
@@ -12,23 +13,21 @@ h1 {
     margin-bottom: 40px;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style: none;
+nav {
     display: flex;
-    flex-direction: row;
+    gap: 40px;
     justify-content: center;
-    gap: 30px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
 }
 
-ul li:hover {
-    color: orange;
-    transform: scale(1.2);
+.flex-container {
+    padding: 8px 16px;
+    border-radius: 2rem;
+    transition: transform 0.2s ease-in-out;
+    font-size: 22px;
+}
+
+.flex-container:hover {
+    background-color: orange;
+    transform: scale(1.1);
+    color: white;
 }
